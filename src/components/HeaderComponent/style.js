@@ -37,3 +37,10 @@ export const WrapperHeaderCart = styled.span`
     gap: 5px;
     font-size: 12px;
     `
+
+export const WrapperContentPopup = styled.p`
+    cursor: pointer;
+    &:hover {
+        color: rgb(26,148,255);
+    }
+`

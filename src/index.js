@@ -10,14 +10,14 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const queryClient = new QueryClient()
 root.render(
-  //<React.StrictMode>
-  <QueryClientProvider client={queryClient}>
+  // <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
     <Provider store={store}>
     <App />
     </Provider>
-    <ReactQueryDevtools initialIsOpen={false} />
+    <ReactQueryDevtools initialIsOpen={false}/>
     </QueryClientProvider>
- // </React.StrictMode>
+  // </React.StrictMode>
 );
 
 
